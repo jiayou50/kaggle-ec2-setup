@@ -28,7 +28,6 @@ echo "Setting up runit notebook service"
 echo
 sleep 2
 sudo apt-get install -y runit
-sudo mkdir /etc/service
 sudo ln -s /home/ubuntu/kaggle-ec2-setup/runit/notebook /etc/service/notebook
 
 echo
