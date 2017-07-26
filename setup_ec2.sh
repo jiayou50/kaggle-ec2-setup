@@ -9,6 +9,7 @@ sudo apt-get -y upgrade
 echo
 echo "Installing Python packages"
 echo
+sudo apt-get install -y python3-pip
 sudo pip3 install -U -r requirements.txt
 
 echo
