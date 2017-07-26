@@ -31,13 +31,12 @@ echo
 echo "Setting up data volume"
 echo
 sudo mkdir /data
-# sudo mkfs -t ext4 /dev/xvdf
-# mount /dev/xvdf /data
-
 if [ ! -e /etc/fstab.orig ]
 then
   sudo cp /etc/fstab /etc/fstab.orig
 fi
-sudo echo "/dev/xvdf       /data   ext4    defaults,nofail        0       2" >> /etc/fstab
+echo "/dev/xvdf       /data   ext4    defaults,nofail        0       2" | sudo tee --append /etc/fstab > /dev/null
 sudo mount -a
 sudo chmod a+w /data
+
+# sudo mkfs -t ext4 /dev/xvdf
