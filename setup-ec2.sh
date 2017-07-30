@@ -13,6 +13,8 @@ sleep 2
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get install -y graphviz
+sudo apt-get install -y htop
+sudo apt-get install -y atop
 
 echo
 echo "Installing Python packages"
