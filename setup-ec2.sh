@@ -5,9 +5,14 @@ set -e
 echo
 echo "Starting"
 echo
+
+echo
+echo "Installing packages"
+echo
 sleep 2
 sudo apt-get update
 sudo apt-get -y upgrade
+sudo apt-get install -y graphviz
 
 echo
 echo "Installing Python packages"
