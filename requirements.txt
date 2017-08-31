@@ -9,3 +9,4 @@ seaborn
 scikit-image
 scikit-learn
 graphviz
+lightgbm
